@@ -1,0 +1,31 @@
+{
+  "name": "2016-06-mvp",
+  "version": "1.0.0",
+  "description": "MVP Project for Hack Reactor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel . --watch --out-dir compiled --presets=es2015,react --ignore=node_modules,compiled --source-maps inline",
+    "start": "npm run babel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donovanCarreno/2016-06-mvp.git"
+  },
+  "keywords": [],
+  "author": "Donovan Carreno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donovanCarreno/2016-06-mvp/issues"
+  },
+  "homepage": "https://github.com/donovanCarreno/2016-06-mvp#readme",
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1"
+  }
+}
