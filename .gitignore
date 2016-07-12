@@ -42,3 +42,7 @@ compiled/
 
 ## Fake data ##
 Data.txt
+
+## API keys ##
+src/config/mashape.js
+compiled/config/mashape.js

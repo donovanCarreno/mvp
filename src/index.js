@@ -1,1 +1,1 @@
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App searchRecipes={searchRecipes} apiKey={'MASHAPE_API_KEY'} />, document.getElementById('app'));

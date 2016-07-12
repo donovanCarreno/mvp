@@ -1,6 +1,6 @@
 class App extends React.Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 
 		this.state = {
 			protein: 0,
@@ -28,6 +28,8 @@ class App extends React.Component {
 	}
 
 	handleClick() {
+		// console.log(this.props.apiKey);
+		this.props.searchRecipes();
 		console.log(this.state);
 	}
 
