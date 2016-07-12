@@ -31,7 +31,7 @@ class App extends React.Component {
 	handleClick() {
 		// console.log(this.props.apiKey);
 		this.props.searchRecipes();
-		console.log(this.state);
+		// console.log(this.state);
 	}
 
   render() {
