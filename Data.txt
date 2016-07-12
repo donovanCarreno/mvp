@@ -1,11 +1,4 @@
-https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByNutrients
 
-// These code snippets use an open-source library.
-unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByNutrients?maxcalories=100&maxcarbs=40&maxfat=20&maxprotein=50&mincalories=0&minCarbs=0&minfat=0&minProtein=0")
-.header("X-Mashape-Key", "hMfv2QjVJ8mshqkAjZOwrCXCiM1op1l7lLZjsntI208cpSjNJw")
-.end(function (result) {
-  console.log(result.status, result.headers, result.body);
-});
 
 [
   {
