@@ -29,13 +29,17 @@ class App extends React.Component {
 	}
 
 	getData(data) {
+		data = data.sort(function(a, b) {
+			return b.protein - a.protein;
+		});
+		
 		this.setState({
 			recipes: data
 		});
 	}
 
 	getRecipe(id) {
-		console.log('id?', id);
+		this.props.getRecipeById(id);
 	}
 
 	handleClick() {
