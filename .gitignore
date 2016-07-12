@@ -39,3 +39,6 @@ node_modules/
 
 ## Compiled files ##
 compiled/
+
+## Fake data ##
+Data.txt
