@@ -34,6 +34,10 @@ class App extends React.Component {
 		});
 	}
 
+	getRecipe(id) {
+		console.log('id?', id);
+	}
+
 	handleClick() {
 		var protein = this.state.protein;
 		var carbs = this.state.carbs;
@@ -51,7 +55,7 @@ class App extends React.Component {
         	fat={this.getFat.bind(this)} 
         	handleSearch={this.handleClick.bind(this)}/>
         <h1>Search For Recipes That Fit Your Macros</h1>
-        <Recipes recipes={this.state.recipes}/>
+        <Recipes recipes={this.state.recipes} recipeId={this.getRecipe.bind(this)} />
       </div>
     );
   }

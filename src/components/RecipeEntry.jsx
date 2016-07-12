@@ -1,5 +1,5 @@
 var RecipeEntry = (props) => (
-  <div data-id={props.recipe.id}>
+  <div onClick={props.recipeId}>
     <h3>{props.recipe.title}</h3>
     <img src={props.recipe.image} />
     <h5>Protein: {props.recipe.protein}</h5>
