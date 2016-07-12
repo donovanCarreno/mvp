@@ -13,10 +13,12 @@
 // 	});
 // };
 
-var searchMashapeRecipes = () => {
-	var root = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByNutrients?maxcarbs=40&maxfat=20&maxprotein=50';
+var searchMashapeRecipes = (protein, carbs, fat, callback) => {
+	var root = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes';
+	var queryString = `/findByNutrients?maxcarbs=${carbs}&maxfat=${fat}&maxprotein=${protein}`;
+
 	$.ajax({
-	  url: root,
+	  url: root + queryString,
 	  headers: {"X-Mashape-Key": MASHAPE_API_KEY},
 	  method: 'GET',
 	  error: function(err) {
@@ -24,6 +26,6 @@ var searchMashapeRecipes = () => {
 	  }
 	})
 	.done(function(data) {
-		console.log('done:', data[0]);
+		callback(data);
 	});
 };

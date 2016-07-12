@@ -28,10 +28,18 @@ class App extends React.Component {
 		});
 	}
 
+	getData(data) {
+		this.setState({
+			recipes: data
+		});
+	}
+
 	handleClick() {
-		// console.log(this.props.apiKey);
-		this.props.searchRecipes();
-		// console.log(this.state);
+		var protein = this.state.protein;
+		var carbs = this.state.carbs;
+		var fat = this.state.fat;
+
+		this.props.searchRecipes(protein, carbs, fat, this.getData.bind(this));
 	}
 
   render() {
