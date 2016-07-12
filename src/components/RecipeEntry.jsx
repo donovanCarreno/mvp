@@ -1,5 +1,5 @@
 var RecipeEntry = () => (
-	<div>
-		Recipe Entry will go here
-	</div>
+  <div>
+    Recipe Entry will go here
+  </div>
 );

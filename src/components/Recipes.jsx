@@ -1,6 +1,6 @@
 var Recipes = () => (
-	<div>
-		Recipes
-		<RecipeEntry />
-	</div>
+  <div>
+    Recipes
+    <RecipeEntry />
+  </div>
 );
