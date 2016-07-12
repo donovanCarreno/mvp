@@ -3,6 +3,7 @@ class App extends React.Component {
 		super(props);
 
 		this.state = {
+			recipes: exampleRecipeData,
 			protein: 0,
 			carbs: 0,
 			fat: 0
@@ -41,8 +42,8 @@ class App extends React.Component {
         	carbs={this.getCarbs.bind(this)}
         	fat={this.getFat.bind(this)} 
         	handleSearch={this.handleClick.bind(this)}/>
-        <h1>Hello World</h1>
-        <Recipes />
+        <h1>Search For Recipes That Fit Your Macros</h1>
+        <Recipes recipes={this.state.recipes}/>
       </div>
     );
   }
