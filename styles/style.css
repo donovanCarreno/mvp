@@ -7,3 +7,7 @@ img {
 	height: 450px;
 	outline: 1px solid black;
 }
+
+span {
+	margin: 0 10px;
+}
