@@ -32,7 +32,7 @@ class App extends React.Component {
 		data = data.sort(function(a, b) {
 			return b.protein - a.protein;
 		});
-		
+
 		this.setState({
 			recipes: data
 		});
@@ -52,7 +52,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="jumbotron text-center">
         <Nav
         	protein={this.getProtein.bind(this)}
         	carbs={this.getCarbs.bind(this)}

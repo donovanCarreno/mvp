@@ -1,5 +1,5 @@
 var RecipeEntry = (props) => (
-  <div onClick={() => props.recipeId(props.recipe.id)}>
+  <div className="col-sm-4 row-margin" onClick={() => props.recipeId(props.recipe.id)}>
     <h3>{props.recipe.title}</h3>
     <img src={props.recipe.image} />
     <h5>Protein: {props.recipe.protein}</h5>
